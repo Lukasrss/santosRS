@@ -1,8 +1,7 @@
-
-/* Color Theme Swatches in Hex 
-.Samuel-Alexander-AW19-Collection-1-hex { color: #8C1F28; }
-.Samuel-Alexander-AW19-Collection-2-hex { color: #591C21; }
-.Samuel-Alexander-AW19-Collection-3-hex { color: #044040; }
-.Samuel-Alexander-AW19-Collection-4-hex { color: #D92525; }
-.Samuel-Alexander-AW19-Collection-5-hex { color: #F2F2F2; }
-*/
+.root{
+  --color-red-mid: #8C1F28; 
+  --color-red-bold: #591C21; 
+  --color-green: #044040; 
+  --color-red: #D92525; 
+  --color-white: #F2F2F2; 
+}
