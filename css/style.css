@@ -1,7 +1,8 @@
 :root{
-    --color-dark: #01090D; 
-    --color-light: #F2F2F2; 
-    --color-gold: #F59D00; 
-    --color-gray: #4D5459; 
-    --color-blue: #022859; 
+    --bg-dark: #01090D;
+    --bg-blue: #022859;
+    --menu-gray: #4D5459;
+    --text-white: #F2F2F2;
+    --text-gold: #F59D00;
+    --text-red: #B1221D; 
 }
