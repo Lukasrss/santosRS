@@ -1,7 +1,7 @@
-.root{
-  --color-red-mid: #8C1F28; 
-  --color-red-bold: #591C21; 
-  --color-green: #044040; 
-  --color-red: #D92525; 
-  --color-white: #F2F2F2; 
+:root{
+    --color-dark: #01090D; 
+    --color-light: #F2F2F2; 
+    --color-gold: #F59D00; 
+    --color-gray: #4D5459; 
+    --color-blue: #022859; 
 }
