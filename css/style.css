@@ -2,7 +2,44 @@
     --bg-dark: #01090D;
     --bg-blue: #022859;
     --menu-gray: #4D5459;
-    --text-white: #F2F2F2;
-    --text-gold: #F59D00;
-    --text-red: #B1221D; 
+    --text-white: #F2F2F2; /* p */
+    --text-gold: #F59D00; /* h3, h4 */
+    --text-red: #B1221D; /* h1,h2, icon*/
 }
+/* CSS geral */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-red);
+    background: var(--bg-blue);
+}
+a{
+    color: var(--text-red);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--text-white);
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Times New Roman', Times, serif;
+}
+h1,h2 {
+    color: var(--text-red);
+}
+h3,h4,h5,h6{
+    color: var(--text-gold);
+}
+
+/* Cabecalho */
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 0;
+    padding: 0 15px;
+    background: var(--menu-gray);
+    overflow-y: auto;
+}
+
