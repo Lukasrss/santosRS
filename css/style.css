@@ -1,32 +1,45 @@
 :root{
-    --bg-dark: #01090D;
-    --bg-blue: #022859;
-    --menu-gray: #4D5459;
-    --text-white: #F2F2F2; /* p */
-    --text-gold: #F59D00; /* h3, h4 */
-    --text-red: #B1221D; /* h1,h2, icon*/
+    /* Adicionar novas fontes futuramente */
+    /*Reorganizar os nomes e as cores das variaveis*/
+    --bg-principal: #022859; /* possivel mudança para mais claro */
+    --bg-secundario: #01090D;
+    --menu-lateral: #4D5459;
+    --rodape: #01090D;
+    --text: #F2F2F2; /* p */
+    --text-hover: #B1221D;
+
+    --icon: #B1221D;
+    --bg-icon: #F2F2F2;
+    --icon-hover: #F2F2F2;
+    --bg-icon-hover:#B1221D;
+
+    --title-primary: #B1221D; /*Alterar dps*/
+    --title-secundary: #F59D00; /*Alterar dps*/
+
+    --borda: #550b08;
+    --borda-clara: rgb(196, 187, 187);
 }
 /* CSS geral */
 body{
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--text-red);
-    background: var(--bg-blue);
+    color: var(--text);
+    background: var(--bg-principal);
 }
 a{
-    color: var(--text-red);
+    color: var(--text);
     text-decoration: none;
 }
 a:hover{
-    color: var(--text-white);
+    color: var(--text-hover);
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Times New Roman', Times, serif;
 }
 h1,h2 {
-    color: var(--text-red);
+    color: var(--title-primary);
 }
 h3,h4,h5,h6{
-    color: var(--text-gold);
+    color: var(--title-secundary);
 }
 
 /* Cabecalho */
@@ -39,7 +52,55 @@ h3,h4,h5,h6{
     transition: all ease-in-out 0.5s;
     z-index: 0;
     padding: 0 15px;
-    background: var(--menu-gray);
-    overflow-y: auto;
+    background: var(--menu-lateral);
+    overflow-y: auto; /* caso tenha fique algo oculto no programa adicionara uma barra de rolagem */
+}
+#header .perfil img {
+    margin: 15px auto;
+    display: block;
+    width: 150px;
+    border: 5px solid var(--borda);
+    box-shadow: -17px -7px 15px 2px  rgba(87, 7, 7, 0.801); /* primeiro valor lateral, segundo valor altura, terceiro valor deixa borrado, quarto valor aumenta o tamanho e ultimo valor a cor*/
+}
+#header .perfil h1 {
+    font-size: 44px;
+    margin: 25px;
+    padding: 0;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(214, 22, 22, 0.863);
+}
+#header .perfil h1 a:hover {
+    color: var(--text);
 }
 
+#header .perfil .social-links a{
+    font-size: 18px;
+    display: inline-block;
+    background: var(--bg-icon);
+    color: var(--icon);
+    line-height: 1;
+    padding: 8px;
+    margin-right: 15px;
+    border-radius: 50%;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    transition: 0.3s;
+}
+#header .perfil .social-links a:hover {
+    background: var(--bg-icon-hover);
+    color: var(--icon-hover);
+    box-shadow: 0 0 3px 7px var(--bg-icon-hover);
+    transition: .8s;
+}
+
+
+/*
+    |anotações de cores para o site|
+    titulo: vermelho
+    icones: cor do icone vermelho com fundo branco
+    icones-hover: cor do icone branco com o fundo vermelho
+    menu: branco e icones brancos
+    menu-active: vermelho e icones vermelhos 
+*/
