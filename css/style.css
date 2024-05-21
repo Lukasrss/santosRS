@@ -6,7 +6,7 @@
     /*Reorganizar os nomes e as cores das variaveis*/
     --bg-principal: #4777b6; /* possivel mudança para mais claro */
     --bg-secundario: #01090D;
-    --menu-lateral: #324450; /* #4D5459 */
+    --menu-lateral: #324450; 
     --rodape: #01090D;
     --text: #F2F2F2; /* p */
     --text-hover: #B1221D;
@@ -16,7 +16,7 @@
     --icon-hover: #F2F2F2;
     --bg-icon-hover:#B1221D;
 
-    --title-primary: #B1221D; /*Alterar dps*/
+    --title-primary: #B1221D; /* Alterar dps */
     --title-secundary: #F59D00; /*Alterar dps*/
     --font-principal: "Tiro Devanagari Hindi", serif;
 
@@ -25,7 +25,7 @@
 }
 /* CSS geral */
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-principal);
     color: var(--text);
     background: var(--bg-principal);
 }
@@ -65,8 +65,12 @@ h3,h4,h5,h6{
     width: 150px;
     box-shadow: 0px 0px 10px 3px var(--borda-clara); /* primeiro valor lateral, segundo valor altura, terceiro valor deixa borrado, quarto valor aumenta o tamanho e ultimo valor a cor*/
 }
+#header .perfil img:hover{
+    box-shadow: 0px 0px 10px 3px var(--borda);
+    transition: 0.8s;
+}
 #header .perfil h1 {
-    font-family: var(--font-principal);
+    /* font-family: var(--font-principal); */
     font-size: 44px;
     font-weight: 400;
     margin: 25px;
@@ -75,6 +79,8 @@ h3,h4,h5,h6{
 }
 #header .perfil h1 a:hover {
     color: var(--text);
+    text-shadow: -10px 10px 5px black;
+    transition: 0.5s;
 }
 
 #header .perfil .social-links a{
@@ -94,13 +100,72 @@ h3,h4,h5,h6{
 #header .perfil .social-links a:hover {
     background: var(--bg-icon-hover);
     color: var(--icon-hover);
-    box-shadow: 0 0 3px 7px var(--bg-icon-hover) ;
+    /* box-shadow: 0 0 3px 7px var(--bg-icon-hover) */ ;
     transition: .5s;
 }
 #red{
     color: var(--icon);
 }
 
+/*  Menu Desktop */
+.nav-menu {
+    padding: 30px 0 0 0;
+}
+.nav-menu * { /* O * aplica a todos os filhos as regras css */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.nav-menu > ul > li {
+    position: relative;
+    white-space: nowrap;
+}/* Revisão */
+.nav-menu a,
+.nav-meun:focus{
+    display: flex;
+    align-items: center;
+    color: var(--text);
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+.nav-menu a i,
+.nav-menu a:focus i {
+    font-size: 22px;
+    padding-right: 10px;
+}
+.nav-menu a:hover,
+.nav-menu .active
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
+    text-decoration: none;
+    color: var(--text-hover);
+}
+
+
+/* Ajuste para o corpo principal */
+#main {
+    margin-left: 300px;
+}
+.container,
+.container-fluid{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+@media (max-width: 1199px){
+    #header {
+        left: -300px;
+    }
+    #main {
+        margin-left: 0;
+    }
+    .container,
+    .container-fluid{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
 
 
 /*
