@@ -121,7 +121,7 @@ h3,h4,h5,h6{
     white-space: nowrap;
 }/* Revisão */
 .nav-menu a,
-.nav-meun:focus{
+.nav-menu:focus{
     display: flex;
     align-items: center;
     color: var(--text);
@@ -136,13 +136,38 @@ h3,h4,h5,h6{
     padding-right: 10px;
 }
 .nav-menu a:hover,
-.nav-menu .active
+.nav-menu .active,
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
     text-decoration: none;
     color: var(--text-hover);
 }
 
+/* Menu mobile */
+.mobile-nav-toggle{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+    border: 0;
+    font-size: 26px;
+    transition: all 0.4s;
+    background: var(--icon);
+    color: var(--text);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    cursor: pointer;
+}
+.mobile-nav-active{
+    overflow: hidden;
+}
+.mobile-nav-active #header{
+    left: 0;
+}
 
 /* Ajuste para o corpo principal */
 #main {
