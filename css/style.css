@@ -100,7 +100,7 @@ h3,h4,h5,h6{
 #header .perfil .social-links a:hover {
     background: var(--bg-icon-hover);
     color: var(--icon-hover);
-    /* box-shadow: 0 0 3px 7px var(--bg-icon-hover) */ ;
+    box-shadow: -4px 4px 3px rgba(0, 0, 0, 0.459);
     transition: .5s;
 }
 #red{
@@ -168,6 +168,30 @@ h3,h4,h5,h6{
 .mobile-nav-active #header{
     left: 0;
 }
+
+/* Hero */
+#hero{
+    width: 100%;
+    height: 100vh;
+    background: url("../img/bg.jpg");
+    background-size: cover;
+}
+#hero::before{
+    content: "";
+    background: rgba(5, 13, 20, 0.171);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+#hero .hero-container{
+    position: relative;
+    z-index: 2;
+    min-width: 300px;   
+}
+
 
 /* Ajuste para o corpo principal */
 #main {
