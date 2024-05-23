@@ -4,9 +4,9 @@
 :root{
     /* Adicionar novas fontes futuramente */
     /*Reorganizar os nomes e as cores das variaveis*/
-    --bg-principal: #4777b6; /* possivel mudança para mais claro */
+    --bg-principal: #506277; /* possivel mudança para mais claro */
     --bg-secundario: #01090D;
-    --menu-lateral: #324450; 
+    --menu-lateral: #32445073; 
     --rodape: #01090D;
     --text: #F2F2F2; /* p */
     --text-hover: #B1221D;
@@ -17,7 +17,7 @@
     --bg-icon-hover:#B1221D;
 
     --title-primary: #B1221D; /* Alterar dps */
-    --title-secundary: #F59D00; /*Alterar dps*/
+    --title-secundary: #0b75ee; /*Alterar dps*/
     --font-principal: "Tiro Devanagari Hindi", serif;
 
     --borda: #550b08;
@@ -204,7 +204,9 @@ h3,h4,h5,h6{
 }
 #hero p {
     font-size: 25px;
+    background: rgba(117, 59, 4, 0.356);
 }
+
 #hero p span{
     color: var(--text);
     padding-bottom: 5px;
