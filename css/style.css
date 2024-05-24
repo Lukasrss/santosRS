@@ -4,8 +4,9 @@
 :root{
     /* Adicionar novas fontes futuramente */
     /*Reorganizar os nomes e as cores das variaveis*/
-    --bg-principal: #506277 ; /* possivel mudança para mais claro  linear-gradient(to top, #000000 10%, #506277 80%,#000000 10%)*/
-    --bg-secundario: #01090D;
+    --bg-principal: rgb(192, 192, 192);/* possivel mudança para mais claro ; #506277 */
+    --bg-gradient: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(47,59,71,1) 10%, rgba(60,72,87,1) 25%, rgba(80,98,119,1) 50%, rgba(60,72,87,1) 75%, rgba(47,59,71,1) 90%, rgba(0,0,0,1) 100%);
+    --bg-secundario: #133f55;
     --menu-lateral: #32445073; 
     --rodape: #01090D;
     --text: #F2F2F2; /* p */
@@ -88,6 +89,8 @@ h3,h4,h5,h6{
     padding: 0 15px;
     background: var(--menu-lateral);
     overflow-y: auto; /* caso tenha fique algo oculto no programa adicionara uma barra de rolagem */
+    scrollbar-width: thin;
+    scrollbar-color: black transparent;
 }
 #header .perfil img {
     margin: 15px auto;
@@ -254,6 +257,36 @@ h3,h4,h5,h6{
     padding-right: 30px;
 }
 
+/* Seção gerais */
+section {
+    padding: 60px 0;
+    overflow: hidden;
+    background: var();
+}
+.section-bg {
+    background: var();
+}
+.section-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px;
+    padding-bottom: 20px;
+    color: var(--title-primary);
+    position: relative;
+}
+.section-title h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--title-primary);
+    bottom: 10;
+    left: 0;
+}
+.section-title p {
+    margin-bottom: 0;
+}
 
 /* Media */
 @media(max-width: 768px){
