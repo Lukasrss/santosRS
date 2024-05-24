@@ -4,7 +4,7 @@
 :root{
     /* Adicionar novas fontes futuramente */
     /*Reorganizar os nomes e as cores das variaveis*/
-    --bg-principal: #506277; /* possivel mudança para mais claro */
+    --bg-principal: #506277 ; /* possivel mudança para mais claro  linear-gradient(to top, #000000 10%, #506277 80%,#000000 10%)*/
     --bg-secundario: #01090D;
     --menu-lateral: #32445073; 
     --rodape: #01090D;
