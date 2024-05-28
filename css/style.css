@@ -5,8 +5,8 @@
 :root{
     /* Adicionar novas fontes futuramente */
     /*Reorganizar os nomes e as cores das variaveis*/
-    --bg-principal: rgb(192, 192, 192);/* possivel mudança para mais claro ; #506277 */
-    --bg-secundario: #0f4864;
+    --bg-principal: rgb(151, 149, 149);/* possivel mudança para mais claro ; #506277 */
+    --bg-secundario: #184761;
     --menu-lateral: #32445073; 
     --rodape: #01090D;
     --text: #F2F2F2; /* p */
@@ -19,7 +19,7 @@
     --bg-icon-hover:#B1221D;
 
     --title-primary: rgb(121, 7, 7)/* #1b0f83 */; /* Alterar dps */
-    --title-secundary: #d64911; /*Alterar dps*/
+    --title-secundary: #b14e4e; /*Alterar dps*/
     --font-principal: font: "Tiro Devanagari Hindi", serif;
     --font-secudary: font: "Roboto", sans-serif;
 
@@ -57,20 +57,20 @@ h3,h4,h5,h6{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: var(--bg-icon);
+    background: var(--icon);
     transition: all 0.4s;
 }
 .back-to-top i {
     font-size: 28px;
-    color: var(--icon);
+    color: var(---bg-icon);
     line-height: 0;
 }
 .back-to-top:hover {
-    background: var(--bg-icon-hover);
+    background: var(--icon-hover);
 
 }
 .back-to-top i:hover{
-    color: var(--icon-hover);
+    color: var(--bg-icon-hover);
 }
 .back-to-top.active{
     visibility: visible;
@@ -250,6 +250,7 @@ h3,h4,h5,h6{
 /* Ajuste para o corpo principal */
 #main {
     margin-left: 300px;
+    color: var(--text-escuro);
 }
 .container,
 .container-fluid{
@@ -261,10 +262,10 @@ h3,h4,h5,h6{
 section {
     padding: 60px 0;
     overflow: hidden;
-    background: var();
+    background: var(--bg-principal);
 }
 .section-bg {
-    background: var();
+    background: var(--bg-secundario);
 }
 .section-title{
     margin-bottom: 30px;
@@ -344,9 +345,38 @@ section {
     font-family: "Roboto", sans-serif;
 }
 
-.sobre,.conquistas{
-    color: var(--text-escuro);
+/* Vendas */
+.skills {
+    color: var(--text);
 }
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+.skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+}
+.skill .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+.skills .progress-bar-bg {
+    height: 10px;
+    background: var(--bg-icon);
+}
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    background: var(--icon);
+}
+
+
 
 /* Media */
 @media(max-width: 768px){
