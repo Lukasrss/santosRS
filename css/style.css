@@ -387,9 +387,10 @@ section {
     font-size: 30px;
     font-weight: 700;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 .resume .resume-item {
+    position: relative;
     padding: 0 0 20px 20px;
     margin-top: -2px;
     border-left: 2px solid var(--title-secundary);
@@ -400,6 +401,24 @@ section {
     font-weight: 600;
     text-transform: uppercase;
     font-family: ;
+    margin-bottom: 10px;
+}
+.resume .resume-item ul {
+    padding-left: 20px;
+}
+.resume .resume-item li {
+    padding-bottom: 10px;
+}
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background:  var(--bg-icon);
+    border: 2px solid var(--title-secundary);
 }
 
 /* Media */
