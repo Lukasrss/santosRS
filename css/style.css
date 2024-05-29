@@ -5,8 +5,8 @@
 :root{
     /* Adicionar novas fontes futuramente */
     /*Reorganizar os nomes e as cores das variaveis*/
-    --bg-principal: rgb(151, 149, 149);/* possivel mudança para mais claro ; #506277 */
-    --bg-secundario: #184761;
+    --bg-principal: rgb(167, 164, 164);/* possivel mudança para mais claro ; #506277 */
+    --bg-secundario: #3d7ea1;
     --menu-lateral: #32445073; 
     --rodape: #01090D;
     --text: #F2F2F2; /* p */
@@ -19,7 +19,7 @@
     --bg-icon-hover:#B1221D;
 
     --title-primary: rgb(121, 7, 7)/* #1b0f83 */; /* Alterar dps */
-    --title-secundary: #b14e4e; /*Alterar dps*/
+    --title-secundary: #1d5c86; /*Alterar dps*/
     --font-principal: font: "Tiro Devanagari Hindi", serif;
     --font-secudary: font: "Roboto", sans-serif;
 
@@ -348,6 +348,12 @@ section {
 /* Vendas */
 .skills {
     color: var(--text);
+}
+.skills h2 {
+    color: var(--title-secundary);
+}
+.skills h2::after {
+    background: var(--title-secundary);
 }
 .skills .progress {
     height: 60px;
