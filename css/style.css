@@ -96,10 +96,10 @@ h3,h4,h5,h6{
     width: 150px;
     box-shadow: 0px 0px 10px 3px var(--borda-clara); /* primeiro valor lateral, segundo valor altura, terceiro valor deixa borrado, quarto valor aumenta o tamanho e ultimo valor a cor*/
 }
-#header .perfil img:hover{
+/* #header .perfil img:hover{
     box-shadow: 0px 0px 10px 3px var(--borda);
     transition: 0.8s;
-}
+} */
 #header .perfil h1 {
     font-family: "Tiro Devanagari Hindi", serif;
     font-size: 44px;
@@ -264,6 +264,7 @@ section {
 }
 .section-bg {
     background: var(--bg-secundario);
+    color: var(--text);
 }
 .section-title{
     margin-bottom: 30px;
@@ -411,6 +412,56 @@ section {
     background:  var(--bg-icon);
     border: 2px solid var(--title-secundary);
 }
+
+/* Filtros portfolio / Veiculos */
+.portfolio .portfolio-item {
+    margin-bottom: 30px;
+}
+.portfolio #portfolio-filters {
+    padding: 0;
+    margin: 0 auto 35px auto;
+    list-style: none;
+    text-align: center;
+    background: var(--bg-icon);
+    
+    border-radius: 40px;
+    padding: 2px 15px;
+}
+.portfolio #portfolio-filters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px 8px 15px;
+    font-size: 16px;
+    line-height: 1;
+    color: var(--title-secundary);
+    font-weight: 600;
+    transition: all 0.5 ease-in-out;
+}
+.portfolio #portfolio-filters li:hover, 
+.portfolio #portfolio-filters li.filter-active{
+    color: var(--text);
+    background: var(--title-secundary);
+    border-radius: 40px;
+}
+.portfolio .portfolio-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.portfolio .portfolio-wrap::before {
+    content: "";
+    background: rgba(255,255,255 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all ease-in-out 0.3;
+    z-index: 2;
+    opacity: 0;
+}
+
+
 
 /* Media */
 @media(max-width: 768px){
