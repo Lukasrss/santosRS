@@ -25,6 +25,10 @@
     --borda-clara: rgb(196, 187, 187);
 }
 /* CSS geral */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(2, 2, 2) transparent;
+}
 body{
     font-family:  "Roboto", sans-serif;;
     color: var(--text);
@@ -134,8 +138,15 @@ h3,h4,h5,h6{
     box-shadow: -4px 4px 3px rgba(0, 0, 0, 0.459);
     transition: .5s;
 }
-#red{
+.red{
     color: rgb(133, 10, 10)/* var(--icon) */;
+    -webkit-text-stroke: 2px #1a0303;
+}
+.black{
+    font-family: 'Tiro Devanagari Hindi';
+    font-style: italic;
+    color: #070000/* #a80707 */;
+    -webkit-text-stroke: 1px #8d0505/* #1a0303 */;
 }
 
 /*  Menu Desktop */
@@ -442,6 +453,7 @@ section {
     color: var(--text);
     background: var(--title-secundary);
     border-radius: 40px;
+    box-shadow: -3px 0px 5px rgb(84, 85, 85);
 }
 .portfolio .portfolio-wrap {
     transition: 0.3s;
@@ -450,7 +462,7 @@ section {
 }
 .portfolio .portfolio-wrap::before {
     content: "";
-    background: rgba(255,255,255 0.5);
+    background: rgba(255, 255, 255, 0.315);
     position: absolute;
     top: 0;
     right: 0;
@@ -460,7 +472,43 @@ section {
     z-index: 2;
     opacity: 0;
 }
-
+.portfolio .portfolio-wrap .portfolio-links {
+    opacity: 1;
+    right: 0;
+    bottom: -60px;
+    left: 0;
+    z-index: 3;
+    position: absolute;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    justify-content: center;
+}
+.portfolio .portfolio-wrap .portfolio-links a {
+    color: var(--text);
+    font-size: 28px;
+    text-align: center;
+    background: var(--title-secundary);
+    transition: 0.3s;
+    width: 50%;
+}
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+    background: var(--title-secundary);
+}
+.portfolio .portfolio-wrap .portfolio-links a+a {
+    border-left: 1px solid var(--menu-lateral);
+}
+.portfolio .portfolio-wrap:hover::before {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+}
+.portfolio .portfolio-wrap:hover .portfolio-links{
+    opacity: 1;
+    bottom: 0;
+}
+/* Portfolio detalhes */
 
 
 /* Media */
