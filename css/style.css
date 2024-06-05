@@ -100,10 +100,10 @@ h3,h4,h5,h6{
     width: 150px;
     box-shadow: 0px 0px 10px 3px var(--borda-clara); /* primeiro valor lateral, segundo valor altura, terceiro valor deixa borrado, quarto valor aumenta o tamanho e ultimo valor a cor*/
 }
-/* #header .perfil img:hover{
-    box-shadow: 0px 0px 10px 3px var(--borda);
+#header .perfil img:hover{
+    box-shadow: 0px 0px 10px 10px var(--bg-icon);
     transition: 0.8s;
-} */
+}
 #header .perfil h1 {
     font-family: "Tiro Devanagari Hindi", serif;
     font-size: 44px;
@@ -509,6 +509,37 @@ section {
     bottom: 0;
 }
 /* Portfolio detalhes */
+
+
+/* Serviços */
+.services .icon-box {
+    margin-bottom: 20px;
+}
+.services .icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    /* border: 1px solid #e9ecec; */
+    background: var(--title-secundary);
+    transition: 0.5s;
+    
+}
+.services .icon i{
+    color: var(--bg-icon);
+    font-size: 24px;
+    line-height: 0;
+}
+.services .icon-box:hover .icon {
+    background: rgba(255, 255, 255, 0.336);
+    transition: all 1s;
+}
+.services .icon-box:hover .icon i {
+    color: var(--title-secundary);
+}
 
 
 /* Media */
