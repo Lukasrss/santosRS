@@ -535,12 +535,23 @@ section {
 }
 .services .icon-box:hover .icon {
     background: rgba(255, 255, 255, 0.336);
+    border: 1px solid var(--title-secundary);
     transition: all 1s;
 }
 .services .icon-box:hover .icon i {
     color: var(--title-secundary);
 }
-
+.services .title {
+    margin-left: 80px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 24px;
+}
+.services .description {
+    margin-left: 80px;
+    line-height: 24px;
+    font-size: 18px;
+}
 
 /* Media */
 @media(max-width: 768px){
