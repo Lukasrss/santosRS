@@ -18,8 +18,8 @@
 
     --title-primary: rgb(121, 7, 7)/* #1b0f83 */; /* Alterar dps */
     --title-secundary: #1d5c86; /*Alterar dps*/
-    --font-principal: font: "Tiro Devanagari Hindi", serif;
-    --font-secudary: font: "Roboto", sans-serif;
+    --font-principal: "Tiro Devanagari Hindi", serif;
+    --font-secudary: "Roboto", sans-serif;
 
     --borda: #550b08;
     --borda-clara: rgb(196, 187, 187);
@@ -599,12 +599,14 @@ section {
     margin: 0 15px 35px 15px;
     padding: 20px;
     background: var(--menu-lateral);
-    border-radius: 30px;
+    border-radius: 60px;
     position: relative;
 }
 .depoimentos .depoimento-item p:hover{
     background: rgba(151, 148, 148, 0.63);
     box-shadow: -10px 10px 15px rgb(0, 0, 0);
+    border-radius: 0;
+    transition: 1s;
 }
 .depoimentos .depoimento-item p::after {
     content: "";
@@ -613,9 +615,21 @@ section {
     position: absolute;
     bottom: -20px;
     left: calc(50% - 20px);
-    border-top: 20px solid white;
+    border-top: 20px solid var(--menu-lateral);
     border-right: 20px solid transparent;
     border-left: 20px solid transparent;
+}
+.depoimentos .depoimento-item p:hover::after{
+    border-top: 20px solid rgba(151, 148, 148, 0.63);
+}
+.depoimentos .swiper-pagination{
+    margin-top: 40px;
+    position: relative;
+}
+.depoimentos .swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: var(--bg-icon);
 }
 
 /* Media */
