@@ -632,6 +632,56 @@ section {
     background: var(--bg-icon);
 }
 
+/* Contato */
+.contato {
+    padding-bottom: 130px;
+}
+.contato .info{
+    padding: 30px;
+    background: var(--bg-icon);
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.459);
+}
+.contato .info i{
+    font-size: 20px;
+    color: var(--text);
+    float: left;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--title-secundary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.contato .info i:hover {
+    color: var(--title-secundary);
+    background: var(--bg-icon);
+    border: 1px dotted var(--title-secundary);
+}
+.contato .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.contato .info p {
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.info a {
+    color: var(--text-escuro);
+}
+.info .fone i:hover {
+    color: rgb(15, 224, 15);
+    border: 1px dotted rgb(15, 224, 15);
+}
+.contato .info .fone a:hover{
+    color: rgb(15, 224, 15);
+}
+
 /* Media */
 @media(max-width: 768px){
     #hero h1{
