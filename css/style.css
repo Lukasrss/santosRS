@@ -796,11 +796,11 @@ section {
         display: inline-block;
     }
 }
-@media (max-width: 1024px){
-    #hero{
+/* @media (min-width: 1024px){
+    #hero {
         background-attachment: fixed;
     }
-}
+} */
 @media (max-width: 1199px){
     #header {
         background: #324450;
