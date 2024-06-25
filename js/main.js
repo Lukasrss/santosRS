@@ -246,6 +246,20 @@ selectEl.addEventListener(type, listener): Se all for falso, adiciona o ouvinte 
     }
   });
 
+  new Swiper('.detalhes-slider', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    }
+  });
+
   /**
    * Controle deslizante de depoimentos
    */
